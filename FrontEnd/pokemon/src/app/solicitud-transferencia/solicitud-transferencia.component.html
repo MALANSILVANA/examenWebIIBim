@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-sm-6">
+    <h5>Usuario</h5>
+    <app-user-perfil [nombreUsuario]=""
+                     [urlImagen]=""></app-user-perfil>
+  </div>
+  <div class="col-sm-6">
+    <app-item-peticion
+      [atributoIP1]="'h1'"
+      [atributoIP2]="'h2'"
+      [imgIP]="''"></app-item-peticion>
+  </div>
+</div>
+<div class="row">
+  Modelos hijo - 4
+</div>
+<div class="row">
+  <div class="col-sm-3" *ngFor="let perfil of perfiles">
+    <app-modelo-hijo [atributoH1]="perfil.nombreImagen"
+                     [atributoH2]="perfil.nombrePerfil"
+                     [imgHijo]="'/assets/imagenes/'+perfil.nombreImagen"
+                     [btn]="'Seleccionar Transferencia'"></app-modelo-hijo>
+  </div>
+</div>

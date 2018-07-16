@@ -1,0 +1,85 @@
+<!------------------------------------------------>
+<div class="row container">
+  <div>
+    <form>
+      <div class="form-row">
+        <div class="col">
+          <input type="text" class="form-control" id="inlineFormInput"
+                 placeholder="Buscar Usuario o Modelo papa o Modelo hijo">
+        </div>
+        <div class="col-sm-auto">
+          <button type="submit" class="btn btn-primary mb-2">buscar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-sm-12">
+    <h4>USUARIOS</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-3" *ngFor="let perfil of perfiles">
+    <app-user-perfil [nombreUsuario]="perfil.nombrePerfil"
+                     [urlImagen]="'/assets/imagenes/'+perfil.nombreImagen"
+                     (seleccionarUsuario)="usuario($event)"
+
+    ></app-user-perfil>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-1">
+    <button class="btn btn-outline-success"><< Atras</button>
+  </div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1">
+    <button class="btn btn-outline-success">Adelante >></button>
+  </div>
+</div>
+
+<!-------------------------------------------->
+<hr>
+<div class="row">
+  <div class="col-sm-12">
+    <h4>Modelos Papa</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6" *ngFor="let perfil of perfiles1">
+    <app-modelo-papa
+      [atributo1]="perfil.nombrePerfil"
+      [atributo2]="perfil.nombrePerfil"
+      [atributo3]="perfil.nombrePerfil"
+
+      [imgPapa]="'/assets/imagenes/'+perfil.nombreImagen">
+
+    </app-modelo-papa>
+  </div>
+</div>
+
+  <!-------------->
+  <hr>
+  <div class="row">
+    <div class="col-sm-12">
+      <h4>Modelos Hijos</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let perfil of perfiles2">
+      <app-modelo-hijo [atributoH1]="perfil.nombrePerfil"
+                       [atributoH2]="perfil.nombrePerfil"
+                       [imgHijo]="'/assets/imagenes/'+perfil.nombreImagen"
+      [btn]="'Pedir Transferencia'">
+      </app-modelo-hijo>
+    </div>
+  </div>
+

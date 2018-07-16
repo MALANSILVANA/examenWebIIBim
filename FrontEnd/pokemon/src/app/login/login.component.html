@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <br><br><br><br>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <br class="text-center">
+      <h1 class="h3 mb-3 font-weight-normal text-center">Login</h1>
+      <br>
+      <br>
+      <form class="form-signin">
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="sr-only">Correo</label>
+          <input type="email"
+                 class="form-control"
+                 id="exampleInputEmail1"
+                 placeholder="Correo"
+                 name="correo"
+                 required autofocus
+                 [(ngModel)]="this.user.correo"
+                 required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="sr-only">Password</label>
+          <input type="password"
+                 class="form-control"
+                 id="exampleInputPassword1"
+                 placeholder="Password"
+                 name="password"
+                 [(ngModel)]="this.user.password"
+                 required
+          >
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" (click)="ingresarAlSistema(this.user)">Submit</button>
+      </form>
+      <br>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+</div>
+

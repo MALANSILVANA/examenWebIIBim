@@ -1,0 +1,79 @@
+<div class="row">
+  <h5>Usuario</h5>
+</div>
+<div class="row">
+  <app-user-perfil [nombreUsuario]="'nombre'"
+                   [urlImagen]="''"></app-user-perfil>
+</div>
+<div class="row">
+  <h4>Peticiones</h4>
+</div>
+<div class="row">
+
+  <div class="col-sm-6">
+    <app-user-perfil [nombreUsuario]="'nombre'"
+                     [urlImagen]="''"></app-user-perfil>
+  </div>
+  <div class="col-sm-6">
+    <h1>EN ESPERA</h1>
+  </div>
+  <div class="col-sm-4">
+    <app-item-peticion
+      [atributoIP1]="'h1'"
+      [atributoIP2]="'h2'"
+      [imgIP]="''">
+    </app-item-peticion>
+  </div>
+  <div class="col-sm-4"> <h1>< - ></h1> </div>
+  <div class="col-sm-4">
+    <app-item-peticion
+      [atributoIP1]="'h1'"
+      [atributoIP2]="'h2'"
+      [imgIP]="''">
+    </app-item-peticion>
+  </div>
+</div>
+<div class="row" style="background-color: #dc3545">
+
+</div>
+
+<hr>
+<div class="row">
+
+    <div class="col-sm-6">
+      <div class="row">
+        <app-btn-aceptar [nombreBotonA]="'Aceptar'"></app-btn-aceptar>
+      </div>
+      <br>
+      <div class="row">
+        <app-btn-rechazar [nombreBotonR]="'Rechazar'"></app-btn-rechazar>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <app-user-perfil [nombreUsuario]="'nombre'"
+                       [urlImagen]="''"></app-user-perfil>
+    </div>
+
+  <br>
+    <div class="col-sm-4">
+      <app-item-peticion
+        [atributoIP1]="'h1'"
+        [atributoIP2]="'h2'"
+        [imgIP]="''">
+      </app-item-peticion>
+    </div>
+    <div class="col-sm-4">
+      <h1><-></h1>
+    </div>
+    <div class="col-sm-4">
+      <app-item-peticion
+        [atributoIP1]="'h1'"
+        [atributoIP2]="'h2'"
+        [imgIP]="''">
+      </app-item-peticion>
+    </div>
+
+</div>
+
+
+
