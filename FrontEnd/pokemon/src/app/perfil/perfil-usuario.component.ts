@@ -17,7 +17,7 @@ export class PerfilUsuarioComponent implements OnInit {
   perfiles = [
     {
       id: 1,
-      nombrePerfil: 'tatis1909',
+      nombrePerfil: 'Bulbasaur',
       nombreImagen: 'tatis1909.png'
     },
     {
